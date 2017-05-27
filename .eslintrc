@@ -14,5 +14,6 @@
       "experimentalObjectRestSpread": true,
       "jsx": true
     }
-  }
+  },
+  "rules" : {"no-console": "off"}
 }
