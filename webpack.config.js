@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -11,6 +12,9 @@ module.exports = {
     jquery: 'jQuery'
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: 'app/index.html'
+    }),
     new webpack.ProvidePlugin({
       '$': 'jquery',
       'jQuery': 'jquery'
@@ -44,5 +48,9 @@ module.exports = {
       path.resolve(__dirname, './node_modules/foundation-sites/scss')
     ]
   },
-  devtool: 'cheap-module-eval-source-map'
+  devtool: 'cheap-module-eval-source-map',
+  devServer: {
+    historyApiFallback: true,
+    hot: true
+  }
 };

@@ -2,16 +2,20 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
-// Load foundation
+// // Load foundation
 $(document).foundation();
 
 // App css
-require('style!css!sass!applicationStyles')
+require('style-loader!css-loader!sass-loader!applicationStyles')
 
-ReactDOM.render(
-  <p>Boilerplate 3 Project</p>,
-  document.getElementById('app')
-);
+// import $ from 'jquery'
+// import '!style-loader!css-loader!foundation-sites/dist/foundation.min.css'
+// $(document).foundation();
 
-// require('./redux-example.jsx');
-require('./redux-todo-example.jsx');
+// ReactDOM.render(
+//   <p>Boilerplate 4 Project</p>,
+//   document.getElementById('app')
+// );
+
+require('./redux-example.jsx');
+// require('./redux-todo-example.jsx');

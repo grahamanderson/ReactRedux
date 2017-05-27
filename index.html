@@ -1,0 +1,86 @@
+Html Webpack Plugin:
+<pre>
+  TypeError: Cannot read property '0' of undefined
+  
+  - ExternalModuleFactoryPlugin.js:19 
+    [robert]/[webpack]/lib/ExternalModuleFactoryPlugin.js:19:40
+  
+  - NormalModuleFactory.js:159 
+    [ReactRedux]/[webpack]/lib/NormalModuleFactory.js:159:3
+  
+  - Tapable.js:75 NormalModuleFactory.applyPluginsAsyncWaterfall
+    [ReactRedux]/[tapable]/lib/Tapable.js:75:69
+  
+  - NormalModuleFactory.js:144 NormalModuleFactory.create
+    [ReactRedux]/[webpack]/lib/NormalModuleFactory.js:144:8
+  
+  - Compilation.js:356 Compilation.process [as _addModuleChain]
+    [ReactRedux]/[webpack]/lib/Compilation.js:356:16
+  
+  - Compilation.js:424 Compilation.process [as addEntry]
+    [ReactRedux]/[webpack]/lib/Compilation.js:424:7
+  
+  - SingleEntryPlugin.js:24 Compiler.compiler.plugin
+    [robert]/[webpack]/lib/SingleEntryPlugin.js:24:16
+  
+  - Tapable.js:107 Compiler.applyPluginsParallel
+    [ReactRedux]/[tapable]/lib/Tapable.js:107:14
+  
+  - Compiler.js:394 Compiler.compile
+    [ReactRedux]/[webpack]/lib/Compiler.js:394:7
+  
+  - Compiler.js:203 Compiler.runAsChild
+    [ReactRedux]/[webpack]/lib/Compiler.js:203:7
+  
+  - compiler.js:70 
+    [robert]/[html-webpack-plugin]/lib/compiler.js:70:19
+  
+  - debuggability.js:300 Promise._execute
+    [robert]/[html-webpack-plugin]/[bluebird]/js/release/debuggability.js:300:9
+  
+  - promise.js:483 Promise._resolveFromExecutor
+    [robert]/[html-webpack-plugin]/[bluebird]/js/release/promise.js:483:18
+  
+  - promise.js:79 new Promise
+    [robert]/[html-webpack-plugin]/[bluebird]/js/release/promise.js:79:10
+  
+  - compiler.js:69 Object.compileTemplate
+    [robert]/[html-webpack-plugin]/lib/compiler.js:69:10
+  
+  - index.js:47 Compiler.<anonymous>
+    [robert]/[html-webpack-plugin]/index.js:47:40
+  
+  - Tapable.js:107 Compiler.applyPluginsParallel
+    [ReactRedux]/[tapable]/lib/Tapable.js:107:14
+  
+  - Compiler.js:394 Compiler.compile
+    [ReactRedux]/[webpack]/lib/Compiler.js:394:7
+  
+  - Compiler.js:46 Watching.<anonymous>
+    [ReactRedux]/[webpack]/lib/Compiler.js:46:17
+  
+  - Tapable.js:60 Compiler.applyPluginsAsync
+    [ReactRedux]/[tapable]/lib/Tapable.js:60:69
+  
+  - Compiler.js:44 Watching._go
+    [ReactRedux]/[webpack]/lib/Compiler.js:44:16
+  
+  - Compiler.js:36 Watching.<anonymous>
+    [ReactRedux]/[webpack]/lib/Compiler.js:36:8
+  
+  - Compiler.js:302 Compiler.readRecords
+    [ReactRedux]/[webpack]/lib/Compiler.js:302:10
+  
+  - Compiler.js:33 new Watching
+    [ReactRedux]/[webpack]/lib/Compiler.js:33:16
+  
+  - Compiler.js:161 Compiler.watch
+    [ReactRedux]/[webpack]/lib/Compiler.js:161:17
+  
+  - webpack.js:186 processOptions
+    [ReactRedux]/[webpack]/bin/webpack.js:186:12
+  
+  - webpack.js:192 Object.<anonymous>
+    [ReactRedux]/[webpack]/bin/webpack.js:192:1
+  
+</pre><script type="text/javascript" src="./public/bundle.js"></script>
